@@ -52,7 +52,7 @@ export default function Home() {
               <button
                 className='rounded-3xl font-semibold bg-red-500 px-6 py-3 ml-4 border border-black dark:border-whitePrimary bg-transparent hover:bg-purple-600 hover:border-purple-600 dark:hover:bg-green-300 dark:hover:border-green-300 hover:shadow-[0_5px_30px_0px_rgba(0,0,0,0.5)] dark:hover:shadow-[0_5px_30px_0px_rgba(255,255,255,0.5)] transition duration-300'
                 type='button'
-				onClick={handleContactMeButton}
+                onClick={handleContactMeButton}
               >
                 CONTACT ME
               </button>
@@ -223,15 +223,52 @@ export default function Home() {
           <h2 className='font-bold text-3xl'>Projects I&apos;ve worked on</h2>
           <div className='flex bg-slate-600 mt-10 rounded-lg'>
             <div className='flex-1 px-4 py-4'>
-              <div className='bg-red-900 w-full h-full rounded-lg min-h-[180px]'></div>
+              <div className='bg-red-900 w-full h-full rounded-lg min-h-[180px] max-h-[250px]'>
+                <Image
+                  className='!relative object-cover h-[unset]'
+                  src='/yt_1200.png'
+                  alt='ytClone'
+                  fill
+                />
+              </div>
             </div>
             <div className='flex-1 flex flex-col px-4 py-4'>
               <div className='flex'>
-                <button className='rounded-xl bg-white px-2 py-1 text-black mr-2 font-semibold'>
-                  Tag 1
+                <button className='rounded-xl bg-white px-3 py-1 text-black mr-2 font-semibold'>
+                  ReactJS
                 </button>
-                <button className='rounded-xl bg-white px-2 py-1 text-black mr-2 font-semibold'>
-                  Tag 2
+                <button className='rounded-xl bg-white px-3 py-1 text-black mr-2 font-semibold'>
+                  Node
+                </button>
+                <button className='rounded-xl bg-white px-3 py-1 text-black mr-2 font-semibold'>
+                  API
+                </button>
+              </div>
+              <div className='text-lg font-bold mt-2'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+              <p className='text-gray-500 mt-1'>lorem ipsum</p>
+            </div>
+          </div>
+          <div className='flex bg-slate-600 mt-4 rounded-lg'>
+            <div className='flex-1 px-4 py-4'>
+              <div className='bg-red-900 w-full h-full rounded-lg min-h-[180px] max-h-[250px]'>
+                <Image
+                  className='!relative object-cover h-[unset]'
+                  src='/home-fixing.jpg'
+                  alt='home-fixing'
+                  fill
+                />
+              </div>
+            </div>
+            <div className='flex-1 flex flex-col px-4 py-4'>
+              <div className='flex'>
+                <button className='rounded-xl bg-white px-3 py-1 text-black mr-2 font-semibold'>
+                  ReactJS
+                </button>
+                <button className='rounded-xl bg-white px-3 py-1 text-black mr-2 font-semibold'>
+                  Service
                 </button>
               </div>
               <div className='text-lg font-bold mt-2'>
@@ -247,31 +284,11 @@ export default function Home() {
             </div>
             <div className='flex-1 flex flex-col px-4 py-4'>
               <div className='flex'>
-                <button className='rounded-xl bg-white px-2 py-1 text-black mr-2 font-semibold'>
-                  Tag 1
+                <button className='rounded-xl bg-white px-3 py-1 text-black mr-2 font-semibold'>
+                  ReactJS
                 </button>
-                <button className='rounded-xl bg-white px-2 py-1 text-black mr-2 font-semibold'>
-                  Tag 2
-                </button>
-              </div>
-              <div className='text-lg font-bold mt-2'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </div>
-              <p className='text-gray-500 mt-1'>lorem ipsum</p>
-            </div>
-          </div>
-          <div className='flex bg-slate-600 mt-4 rounded-lg'>
-            <div className='flex-1 px-4 py-4'>
-              <div className='bg-red-900 w-full h-full rounded-lg min-h-[180px]'></div>
-            </div>
-            <div className='flex-1 flex flex-col px-4 py-4'>
-              <div className='flex'>
-                <button className='rounded-xl bg-white px-2 py-1 text-black mr-2 font-semibold'>
-                  Tag 1
-                </button>
-                <button className='rounded-xl bg-white px-2 py-1 text-black mr-2 font-semibold'>
-                  Tag 2
+                <button className='rounded-xl bg-white px-3 py-1 text-black mr-2 font-semibold'>
+                  Web SDK
                 </button>
               </div>
               <div className='text-lg font-bold mt-2'>

@@ -9,6 +9,7 @@ module.exports = {
       colors: {
         whitePrimary: '#F0F2F5',
 		blackSecondary: '#1C1C22',
+		blackInput: '#2D3546'
       },
       keyframes: {
         slide: {

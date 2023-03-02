@@ -52,7 +52,7 @@ const Navbar = () => {
             <FontAwesomeIcon className='' icon={faSun} />
           )}
         </button>
-        <button className='group relative inline-block bg-white text-black hover:bg-green-300 font-bold px-5 py-2 rounded-3xl hover:shadow-[0_5px_30px_0px_rgba(0,0,0,0.5)] dark:hover:shadow-[0_5px_30px_0px_rgba(255,255,255,0.5)] transition duration-300'>
+        <button className='group relative inline-block dark:bg-white bg-black dark:text-black text-white hover:bg-green-300 font-bold px-5 py-2 rounded-3xl hover:shadow-[0_5px_30px_0px_rgba(0,0,0,0.5)] dark:hover:shadow-[0_5px_30px_0px_rgba(255,255,255,0.5)] transition duration-300'>
           <a key={'contact'} className='no-underline' href={`/contact`}>
             LET&apos;S TALK
           </a>

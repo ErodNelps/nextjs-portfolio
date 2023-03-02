@@ -12,6 +12,9 @@ const nextConfig = {
     defaultLocale: 'en-US',
   },
   reactStrictMode: true,
+  env: {
+    customKey: 'my-value',
+  },
 };
 
 module.exports = nextConfig;

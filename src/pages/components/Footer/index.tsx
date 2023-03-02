@@ -12,7 +12,7 @@ const links = [
 ];
 const Footer = () => {
   return (
-    <footer className='relative w-full max-w-[1024px] bg-blueGray-200 pt-8 pb-6'>
+    <footer className='relative w-full max-w-[1024px] bg-blueGray-200 pb-6'>
       <div className='container'>
         <hr className='my-6 border-blueGray-300' />
         <div className='flex flex-wrap text-left lg:text-left'>

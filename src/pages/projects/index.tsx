@@ -13,7 +13,7 @@ const Projects = () => {
       </Head>
       <main
         className={
-          'flex flex-col flex-1 h-full items-center bg-whitePrimary dark:bg-blackSecondary dark:text-white font-[BaiJamjuree]'
+          'flex flex-col flex-1 h-screen justify-between items-center bg-whitePrimary dark:bg-blackSecondary dark:text-white font-[BaiJamjuree]'
         }
       >
         <Navbar></Navbar>
