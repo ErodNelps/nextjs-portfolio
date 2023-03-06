@@ -12,15 +12,15 @@ const links = [
 ];
 const Footer = () => {
   return (
-    <footer className='relative w-full max-w-[1024px] bg-blueGray-200 pt-8 pb-6'>
-      <div className='container'>
+    <footer className='relative w-full max-w-[1024px] bg-blueGray-200 pb-6 px-2 xl:px-0 md:px-4'>
+      <div className='w-full'>
         <hr className='my-6 border-blueGray-300' />
         <div className='flex flex-wrap text-left lg:text-left'>
-          <div className='w-full flex justify-between'>
-            <h4 className='text-3xl fonat-semibold text-blueGray-700'>
+          <div className='w-full flex flex-col sm:flex-row justify-between'>
+            <h4 className='text-3xl font-semibold text-blueGray-700'>
               Let&apos;s keep in touch!
             </h4>
-            <div className='flex self-end'>
+            <div className='sm:self-end self-start'>
               <div className='flex gap-10 justify-center align-middle'>
                 {links.map((link) => {
                   return (
@@ -38,7 +38,7 @@ const Footer = () => {
           </div>
           <div className='flex flex-1 justify-between items-top mb-6 items-center mt-7'>
             <div className='text-sm text-blueGray-500 font-semibold py-1'>
-              © Designed by Kartik Bansal
+              @ Made with NextJS
             </div>
             <div className='flex gap-3'>
               <div className='p-[1px] rounded-full bg-gradient-to-r from-green-300 via-blue-500 to-purple-600'>
