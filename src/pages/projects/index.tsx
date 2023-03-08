@@ -7,6 +7,7 @@ const projectsList = [
   { id: 'WebSDK', name: 'Web SDK' },
   { id: 'YTClone', name: 'Youtube Clone' },
   { id: 'Nubes3', name: 'Nubes3 - Cloud Storage' },
+  { id: 'NextPortfolio', name: 'NextJS Porfolio' },
 ];
 const Projects = () => {
   const [currentProject, setCurrentProject] = React.useState('HomeService');
@@ -23,7 +24,7 @@ const Projects = () => {
       >
         <Navbar />
         <div className='flex flex-col max-w-[1024px] h-screen mt-24 flex-1 w-full xl:px-0 md:px-4 px-2'>
-          <div  className='flex-1 w-full item-start mb-24'>
+          <div className='flex-1 w-full item-start mb-24'>
             <h2 className='text-6xl font-bold text-transparent leading-[48px] gradient-text animate-slideDownAnim'>
               Projects
             </h2>
@@ -46,15 +47,15 @@ const Projects = () => {
                   })}
                 </ul>
               </div>
-              <div className=' flex-1 flex justify-end items-start text-right '>
+              <div className='flex-1 flex justify-end items-start text-right'>
                 {{
                   HomeService: (
                     <div
                       key='homeservice'
-                      className='dark:bg-blackSecondary bg-whitePrimary h-full pr-5 animate-hideAnim'
+                      className='dark:bg-blackSecondary bg-whitePrimary h-full pr-5 animate-hideAnim '
                     >
                       <p className='text-xl'>Home Fixing Service</p>
-                      <div className='dark:bg-blackSecondary h-full'>
+                      <div className='flex flex-col items-end dark:bg-blackSecondary h-full'>
                         <p className='dark:bg-blackSecondary mt-3'>
                           A service booking website that lets users search for
                           available services based on location and time slots,
@@ -66,6 +67,10 @@ const Projects = () => {
                           created page layouts and common UI components, and
                           later maintained the website post production.
                         </p>
+                        <div className='w-fit mt-4 animate-hideAnim'>
+                          Company project
+                          <div className='w-full h-1 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600'></div>
+                        </div>
                       </div>
                     </div>
                   ),
@@ -75,7 +80,7 @@ const Projects = () => {
                       className='dark:bg-blackSecondary h-full pr-5 animate-hideAnim'
                     >
                       <p className='text-xl'>Web SDK</p>
-                      <div className='dark:bg-blackSecondary h-full pl-5'>
+                      <div className='flex flex-col items-end dark:bg-blackSecondary h-full pl-5'>
                         <p className='dark:bg-blackSecondary mt-3'>
                           A Web SDK that provides reusable and responsive UI
                           components for other ReactJS/NextJS projects.
@@ -85,6 +90,10 @@ const Projects = () => {
                           UI components, implemented API services, and later
                           maintained my components post project integration.
                         </p>
+                        <div className='w-fit mt-4 animate-hideAnim'>
+                          Company project
+                          <div className='w-full h-1 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600'></div>
+                        </div>
                       </div>
                     </div>
                   ),
@@ -94,7 +103,7 @@ const Projects = () => {
                       className='dark:bg-blackSecondary h-full pr-5 animate-hideAnim'
                     >
                       <p className='text-xl '>Youtube Clone</p>
-                      <div className='dark:bg-blackSecondary h-full'>
+                      <div className='flex flex-col items-end dark:bg-blackSecondary h-full'>
                         <p className='dark:bg-blackSecondary mt-3'>
                           A clone website of YouTube with basic functions such
                           as watching/interacting with videos, searching, using
@@ -106,6 +115,17 @@ const Projects = () => {
                           pages and implemented services interacting with
                           Youtube API
                         </p>
+                        <div className='w-fit mt-4 self-end hover:tracking-wide transition-all duration-200'>
+                          <a
+                            className='no-underline font-semibold text-lg'
+                            href='https://github.com/ErodNelps/youtube-clone'
+                            target={'_blank'}
+                            rel='noopener noreferrer'
+                          >
+                            Github
+                          </a>
+                          <div className='w-full h-1 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600'></div>
+                        </div>
                       </div>
                     </div>
                   ),
@@ -115,7 +135,7 @@ const Projects = () => {
                       className='dark:bg-blackSecondary h-full pr-4 animate-hideAnim'
                     >
                       <p className='text-xl'>Nubes3 - Cloud Storage</p>
-                      <div className='dark:bg-blackSecondary'>
+                      <div className='flex flex-col items-end dark:bg-blackSecondary'>
                         <p className='dark:bg-blackSecondary mt-3'>
                           A basic cloud storage system with scaling capability.
                           Developed frontend with ReactJS and backend with
@@ -126,6 +146,45 @@ const Projects = () => {
                           Frontend lead, created tasks for team members, created
                           pages and implemented API services.
                         </p>
+                        <div className='w-fit mt-4 self-end hover:tracking-wide transition-all duration-200'>
+                          <a
+                            className='no-underline font-semibold text-lg'
+                            href='https://github.com/NubeS3/web-client'
+                            target={'_blank'}
+                            rel='noopener noreferrer'
+                          >
+                            Github
+                          </a>
+                          <div className='w-full h-1 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600'></div>
+                        </div>
+                      </div>
+                    </div>
+                  ),
+                  NextPortfolio: (
+                    <div
+                      key='nextport'
+                      className='dark:bg-blackSecondary h-full pr-4 animate-hideAnim'
+                    >
+                      <p className='text-xl'>NextJS Portfolio</p>
+                      <div className='flex flex-col items-end dark:bg-blackSecondary'>
+                        <p className='dark:bg-blackSecondary mt-3'>
+                          This portfolio website is built with NextJS using
+                          Server Side Rendering (SSR), taking advantage of
+                          React&apos;s optimum performance and improve onn its
+                          cons with SSR such as Search engine optimization (SEO)
+                          and First contentful paint time (FCP)
+                        </p>
+                        <div className='w-fit mt-4 self-end hover:tracking-wide transition-all duration-200'>
+                          <a
+                            className='no-underline font-semibold text-lg'
+                            href='https://github.com/ErodNelps/nextjs-portfolio'
+                            target={'_blank'}
+                            rel='noopener noreferrer'
+                          >
+                            Github
+                          </a>
+                          <div className='w-full h-1 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600'></div>
+                        </div>
                       </div>
                     </div>
                   ),
